@@ -1,0 +1,32 @@
+<html>
+
+	<head>
+
+		<title>SSRF / XSS &mdash; Vulnerable Instance</title>
+
+		<style>
+
+			body {
+				color: #202020;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<center>
+			<p>The Hacked.</p>
+			<img src="/1.jpg" />
+		</center>
+
+		<script>
+			alert( document.domain + " is vulnerable!" );
+ alert( document.cookie + " is vulnerable!" );
+
+		</script>
+
+	</body>
+
+</html>
